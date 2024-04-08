@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="WA.css">
+    <link rel="shortcut icon" href="Icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Weather App</title>
+</head>
+<body>
+
+    <div id="search">
+        <input type="text" name="city" id="search-box" placeholder="Enter Your City">
+        <button type="submit">Search</button>
+    </div>
+
+
+    <div id="main">
+        
+        <div id="weather">
+            
+            <div id="mwthr">
+                    <h2>CITY</h2>
+                    <p id="sc">State, Country</p>
+                    <h1>TEMP</h1>
+                    <p>Weather Code</p>
+            </div>
+
+            <div id="wthr">
+                <div id="relhum">
+                    <h4>Relative Humidity</h4>
+                    <p>Value</p>
+                </div>
+
+                <div id="apptemp">
+                    <h4>Apparent Temperature</h4>
+                    <p>Value</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="info">
+            <div id="sdata">
+                
+                <div>
+                    <h4>Wind Speed</h4>
+                    <p>Value</p>
+                </div>
+
+                <div>
+                    <h4>Wind Direction</h4>
+                    <p>Value</p>
+                </div>
+
+                <div>
+                    <h4>Wind Gust</h4>
+                    <p>Value</p>
+                </div>
+
+                <div>
+                    <h4>AQI</h4>
+                    <p>Value</p>
+                </div>
+
+            </div>
+
+            <table>
+
+                <tr>
+                    <th colspan="8">
+                        7-Day Forecast
+                    </th>
+                </tr>
+                
+                <tr>
+                    <th>Day</th>
+                    <td>Today</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+
+                <tr>
+                    <th>Min Temp</th>
+                    <td>Today</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+
+                <tr>
+                    <th>Max Temp</th>
+                    <td>Today</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+
+                <tr>
+                    <th>Sunrise</th>
+                    <td>Today</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+
+                <tr>
+                    <th>Sunset</th>
+                    <td>Today</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+
+                <tr>
+                    <th>Daylight Duration</th>
+                    <td>Today</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+
+            </table>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="WA.js"></script>
+    
+</body>
+</html>

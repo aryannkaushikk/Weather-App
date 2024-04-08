@@ -1,0 +1,278 @@
+/* RESET */
+
+body, h1, h3, h4, p, span, th, td, h2{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* RESET */
+
+/* SET */
+
+:root{
+    --color: white;
+    --bimage: url("ClearNight.jpg");
+}
+
+body{
+    background-image: var(--bimage);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--color);
+}
+
+h4, h3, p{
+    margin: 5px;
+}
+
+#main{
+    height: 480px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+
+input[type="text"]{
+    width: 600px;
+    height: 45px;
+    background: none;
+    border: 1px solid var(--color);
+    color: var(--color);
+    font-size: 21px;
+}
+
+input[type="text"]::placeholder{
+    font-size: 21px;
+    color: var(--color);
+    padding-left: 6px;
+}
+
+button{
+    height: 48px;
+    width: 120px;
+    color: var(--color);
+    background: none;
+    border: 1px var(--color) solid;
+    font-size: 21px;
+    margin-left: 15px;
+}
+
+#weather{
+    border: 1px var(--color) solid;
+    width: 36%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+#info{
+    border: 1px var(--color) solid;
+    border-left: none;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+#sdata{
+    border: 1px var(--color) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96%;
+    height: 30%;
+    margin-bottom: 10px;
+}
+
+#sdata>div>h4{
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+#sdata>div>p{
+    font-size: 18px;
+}
+
+#sdata>div{
+    width: 25%;
+    height: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    width: 96%;
+    height: 50%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th{
+    width: 15%;
+    text-align:center;
+    border: 1px var(--color) solid;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+td{
+    width: 10%;
+    border: 1px var(--color) solid;
+    font-size: 13.5px;
+}
+
+#mwthr{
+    width: 90%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#mwthr>h1{
+    font-size: 99px;
+}
+
+#mwthr>h2{
+    font-size: 36px;
+}
+
+#locbox{
+    margin-top: -10px;
+    border: 1px var(--color) solid;
+}
+
+#wthr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 30%;
+    border: 1px var(--color) solid;
+}
+
+#wthr>div{
+    margin: 3px;
+}
+
+#wthr>div>h4{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#wthr>div>p{
+    font-size: 18px;
+}
+
+@media (max-width: 700px) {
+
+    #main{
+        flex-direction: column;
+        width: 75%;
+    }
+
+    #weather{
+        width: 90%;
+        height: 50%;
+    }
+
+    #mwthr>h1{
+        font-size: 42px;
+    }
+
+    #mwthr>h2{
+        font-size: 27px;
+        margin-bottom: 3px;
+    }
+
+    #mwthr>p{
+        font-size: 12px;
+    }
+
+    #wthr>div>h4{
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    
+    #wthr>div>p{
+        font-size: 9px;
+    }
+
+    #sc{
+        margin-top: -5px;
+    }
+
+    #info{
+        width: 90%;
+        height: 50%;
+        border: 1px var(--color) solid;
+        border-top: none;
+    }
+
+    #sdata>div>h4{
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    
+    #sdata>div>p{
+        font-size: 9px;
+    }
+
+    th{
+        font-size: 9px;
+    }
+
+    td{
+        font-size: 7.5px;;
+    }
+
+    #search{
+        width: 75%;
+    }
+
+    input[type="text"],input[type="text"]::placeholder,button{
+        font-size: 15px;
+        height: 36px;
+    }
+
+    input[type="text"]{
+        width: 213px;
+    }
+
+    button{
+        width: 75px;
+        height: 39px;
+        margin-left: 13.5px;
+    }
+}
+
+/* SET */
