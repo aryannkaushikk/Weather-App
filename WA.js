@@ -94,7 +94,7 @@ function daydurset(response){
 }
 
 
-const site = "https://weather-app-seven-woad-89.vercel.app";
+const site = "https://weather-app-backend-black.vercel.app";
 
 document.addEventListener("DOMContentLoaded", ()=>{
     getdat();
